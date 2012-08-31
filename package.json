@@ -1,0 +1,27 @@
+{
+  "name": "app",
+  "subdomain": "jonykrause",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app",
+    "test": "cake test"
+  },
+  "dependencies": {
+    "express": "*",
+    "jade": "*",
+    "coffee-script": "*",
+    "uglify-js": "*",
+    "uglifycss": "*",
+    "pretty-data": "*"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*",
+    "jquery": ">1.7",
+    "request": "*"
+  },
+  "engines": {
+    "node": "0.8.x"
+  }
+}
