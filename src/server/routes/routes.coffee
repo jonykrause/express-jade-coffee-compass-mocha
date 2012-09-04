@@ -1,8 +1,2 @@
 exports.index = (req, res) ->
-  res.render 'index', { title: 'Express' }
-
-exports.blog = (req, res) ->
-  res.render 'index', { title: 'Express' }
-
-exports.about = (req, res) ->
-  res.render 'index', { title: 'Exas' }
+  res.render 'index', { title: 'Express 3 boilerplate' }

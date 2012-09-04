@@ -3,19 +3,7 @@
 
   exports.index = function(req, res) {
     return res.render('index', {
-      title: 'Express'
-    });
-  };
-
-  exports.blog = function(req, res) {
-    return res.render('index', {
-      title: 'Express'
-    });
-  };
-
-  exports.about = function(req, res) {
-    return res.render('index', {
-      title: 'Exas'
+      title: 'Express 3 boilerplate'
     });
   };
 
