@@ -1,4 +1,4 @@
-#Express 3 boilerplate using CoffeeScript, Sass, Jade and Mocha
+#Express 3 boilerplate
 
 This boilerplate is the product of experimenting with Node.js. As I wasn't able to find a proper structured stack that fits my needs, I built this boilerplate.
 
@@ -6,12 +6,12 @@ This boilerplate is the product of experimenting with Node.js. As I wasn't able 
 ## Documentation
 
 
-## Install dependencies
+### Install dependencies
 
 `$ npm install`
 
 
-## Getting started
+### Getting started
 
 The `src` folder is meant to be the working directory. Corresponding files are compiled to the `compiled` directory.
 
