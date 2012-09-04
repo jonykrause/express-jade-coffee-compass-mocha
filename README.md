@@ -46,7 +46,7 @@ Test client-side code
 
 You could also run all tests
 
-`$ cake testServer`
+`$ npm test`
 
 
 ### Addendum
