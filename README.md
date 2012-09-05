@@ -42,7 +42,7 @@ Test server-side code
 
 Test client-side code
 
-`$ cake testServer`
+`$ cake testClient`
 
 You could also run all tests
 
