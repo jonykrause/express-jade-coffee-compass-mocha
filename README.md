@@ -24,7 +24,7 @@ The Cakefile includes several tasks for certain environments. To compile Sass an
 
 You are able to run tasks like so
 
-`$ cake development`
+`$ cake dev`
 
 
 ### Start the server
@@ -35,10 +35,6 @@ You are able to run tasks like so
 ### Run tests
 
 For testing purpose I used [mocha](http://visionmedia.github.com/mocha/) and [should.js](https://github.com/visionmedia/should.js) for BDD style assertions. Sample test included.
-
-Test server-side code
-
-`$ cake testServer`
 
 Test client-side code
 
