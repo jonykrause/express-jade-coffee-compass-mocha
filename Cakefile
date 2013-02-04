@@ -33,6 +33,7 @@ sTestPath   = "#{appCompPath}/server/test"
 # COMPILER
 # ========
 
+compassExec = 'compass'
 sassExec    = 'sass'
 coffeeExec  = "#{appPath}/node_modules/coffee-script/bin/coffee"
 uglyExec    = "#{appPath}/node_modules/uglify-js/bin/uglifyjs"
@@ -44,9 +45,9 @@ mochaExec   = "#{appPath}/node_modules/mocha/bin/mocha"
 # ========
 
 
-task 'development', ->
+task 'dev', ->
   invoke 'watchCoffeeScript'
-  invoke 'watchSass'
+  invoke 'watchCompass'
   invoke 'concatJS'
   invoke 'beautifyCSS'
   # invoke 'watchServerTests'
@@ -54,8 +55,6 @@ task 'development', ->
 
 
 task 'production', ->
-  invoke 'watchCoffeeScript'
-  invoke 'watchSass'
   invoke 'concatJS'
   invoke 'beautifyCSS'
   invoke 'minifyJS'
@@ -90,6 +89,16 @@ task 'watchServerTests', ->
 task 'watchCoffeeScript', ->
   console.log EOL + 'Starting CoffeeScript Watcher...'
   Helper.spawnWatcher(coffeeExec, ['--watch', '--compile', '--output', appCompPath, appSrcPath])
+
+
+task 'watchCompass', ->
+  console.log 'Starting Compass Watcher...'
+  Helper.spawnWatcher(compassExec, [
+    'watch', "#{sassPath}",
+    '--css-dir', "#{cssPath}",
+    '--sass-dir', "#{sassPath}",
+    '--output-style', 'expanded'
+  ])
 
 
 task 'watchSass', ->
