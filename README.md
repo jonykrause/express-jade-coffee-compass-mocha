@@ -1,6 +1,6 @@
 #Express 3 boilerplate
 
-This boilerplate is the product of experimenting with Node.js. As I wasn't able to find a properly structured stack that fits my needs, I built this boilerplate.
+This boilerplate is the product of experimenting with Node.js. It aims to provide basic scaffolding for Express 3 projects that include client-side.
 
 
 ## Documentation
