@@ -34,7 +34,7 @@ You are able to run tasks like so
 
 ### Run tests
 
-For testing purpose I used [mocha](http://visionmedia.github.com/mocha/) and [should.js](https://github.com/visionmedia/should.js) for BDD style assertions. Sample test included.
+For testing purpose I used [mocha](http://mochajs.org/) and [should.js](https://github.com/visionmedia/should.js) for BDD style assertions. Sample test included.
 
 Test client-side code
 
